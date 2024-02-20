@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "348393246908",
+    "project_id": "medidoc-52a5b",
+    "storage_bucket": "medidoc-52a5b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348393246908:android:8573fe3301855639b8c0b9",
+        "android_client_info": {
+          "package_name": "com.example.medidoc"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvKJq4mhvEzz8-3f_f2TqrUf5uRm0niR0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

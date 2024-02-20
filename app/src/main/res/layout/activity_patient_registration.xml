@@ -1,0 +1,96 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="#FFFFFF"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="150dp">
+
+        <!-- Full Name EditText -->
+        <EditText
+            android:id="@+id/editTextFullNamePatient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:minHeight="48dp"
+            android:layout_marginTop="16dp" />
+
+        <!-- Age EditText -->
+        <EditText
+            android:id="@+id/editTextAgePatient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Age"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:layout_below="@id/editTextFullNamePatient"
+            android:layout_marginTop="16dp" />
+
+        <!-- Gender RadioGroup -->
+        <RadioGroup
+            android:id="@+id/radioGroupGenderPatient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextAgePatient"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonMalePatient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/radioButtonFemalePatient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female" />
+            <RadioButton
+                android:id="@+id/radioButtonOtherPatient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other" />
+        </RadioGroup>
+
+        <!-- Phone Number EditText -->
+        <EditText
+            android:id="@+id/editTextPhoneNumberPatient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:minHeight="48dp"
+            android:layout_below="@id/radioGroupGenderPatient"
+            android:layout_marginTop="16dp" />
+
+        <!-- Password EditText -->
+        <EditText
+            android:id="@+id/editTextPasswordPatient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:layout_below="@id/editTextPhoneNumberPatient"
+            android:layout_marginTop="16dp" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/buttonSubmitPatient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#43A190"
+            android:text="Submit"
+            android:textColor="#212121"
+            android:layout_below="@id/editTextPasswordPatient"
+            android:layout_marginTop="16dp" />
+    </RelativeLayout>
+</ScrollView>

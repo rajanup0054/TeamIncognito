@@ -1,0 +1,112 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="#FFFFFF"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select your profession"/>
+
+        <!-- Specialist Type RadioGroup -->
+        <RadioGroup
+            android:id="@+id/radioGroupSpecialistType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioButtonDoctor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doctor" />
+
+            <RadioButton
+                android:id="@+id/radioButtonPathologist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pathologist" />
+
+            <RadioButton
+                android:id="@+id/radioButtonRadiologist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Radiologist" />
+        </RadioGroup>
+
+        <!-- Full Name EditText -->
+        <EditText
+            android:id="@+id/editTextFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radioGroupSpecialistType"
+            android:layout_marginTop="16dp"
+            android:hint="Full Name"
+            android:minHeight="48dp" />
+
+        <!-- Age EditText -->
+        <EditText
+            android:id="@+id/editTextAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextFullName"
+            android:layout_marginTop="16dp"
+            android:hint="Age"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <!-- Email EditText -->
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextAge"
+            android:layout_marginTop="16dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp" />
+
+        <!-- Experience EditText -->
+        <EditText
+            android:id="@+id/editTextExperience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextEmail"
+            android:layout_marginTop="16dp"
+            android:hint="Experience (in years)"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <!-- Licenses PDF Upload Button -->
+        <Button
+            android:id="@+id/buttonUploadLicenses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextExperience"
+            android:layout_marginTop="16dp"
+            android:background="#43A190"
+            android:text="Upload Licenses (PDF)"
+            android:textColor="#212121" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonUploadLicenses"
+            android:layout_marginTop="16dp"
+            android:background="#43A190"
+            android:text="Submit"
+            android:textColor="#212121" />
+    </RelativeLayout>
+</ScrollView>
